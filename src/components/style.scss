@@ -10,6 +10,7 @@ $react-blockquote-options:(
   $font-family: map-get($map: $react-blockquote-options, $key: font-family);
 
   position: relative;
+  margin: 1.5em;
   &:before,
   &:after{
     font-weight: bold;
@@ -21,13 +22,13 @@ $react-blockquote-options:(
 
   &:before{
     content: "\201C";
-    top: -0.2em;
-    left: 0;
+    top: -0.5em;
+    left: -0.5em;
   }
 
   &:after{
     content: "\201D";
-    bottom: -0.6em;
-    right: 0;
+    bottom: -0.5em;
+    right: -0.5em;
   }
 }
