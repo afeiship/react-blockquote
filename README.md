@@ -7,9 +7,6 @@
   static propTypes = {
     className: PropTypes.string
   };
-
-  static defaultProps = {
-  };
   
 ```
 
@@ -25,7 +22,11 @@ import ReactBlockquote from 'react-blockquote';
 ```scss
 // customize your styles:
 $react-blockquote-options:(
-);
+  color: #ccc,
+  font-size: 50px,
+  opacity: 0.3,
+  font-family:'Georgia'
+)!default;
 
 @import 'node_modules/react-blockquote/dist/style.scss';
 ```

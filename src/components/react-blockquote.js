@@ -10,23 +10,12 @@ export default class extends Component {
   static propTypes = {
     className: PropTypes.string
   };
-
-  static defaultProps = {
-  };
   /*===properties end===*/
 
-  constructor(inProps) {
-    super(inProps);
-    this.state = {
-    };
-  }
-
   render() {
-    const { className, children, ...props } = this.props;
+    const { className, ...props } = this.props;
     return (
-      <blockquote className={classNames('react-blockquote', className)} {...props}>
-        { children }
-      </blockquote>
+      <blockquote className={classNames('react-blockquote', className)} {...props} />
     );
   }
 }
