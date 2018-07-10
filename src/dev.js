@@ -21,7 +21,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="hello-react-blockquote">
-        <ReactBlockquote style={{fontSize: 21}}>
+        <ReactBlockquote style={{padding: 21}}>
           Whenever you see a successful business, someone once made a courageous decision. ~Peter F. Drucker
         </ReactBlockquote>
       </div>

@@ -1,34 +1,40 @@
 $react-blockquote-options:(
   color: #ccc,
   font-size: 50px,
+  opacity: 0.3,
   font-family:'Georgia'
 )!default;
 
 .react-blockquote{
   $color: map-get($map: $react-blockquote-options, $key: color);
   $font-size: map-get($map: $react-blockquote-options, $key: font-size);
+  $opacity: map-get($map: $react-blockquote-options, $key: opacity);
   $font-family: map-get($map: $react-blockquote-options, $key: font-family);
-
   position: relative;
-  margin: 1.5em;
+
   &:before,
   &:after{
+    content:'';
+    width: 24px;
+    height:24px;
+    display: block;
+    background: url(assets/iconmonstr-quote-3.svg) no-repeat;
     font-weight: bold;
     font-size:$font-size;
     color:$color;
     position: absolute;
     font-family: $font-family;
+    opacity: $opacity;
   }
 
-  &:before{
-    content: "\201C";
-    top: -0.5em;
-    left: -0.5em;
+  &:before {
+    transform: rotateY(180deg);
+    top: 0;
+    left: 0;
   }
 
   &:after{
-    content: "\201D";
-    bottom: -0.5em;
-    right: -0.5em;
+    bottom: 0;
+    right: 0;
   }
 }
