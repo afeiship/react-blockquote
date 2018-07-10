@@ -22,7 +22,7 @@ class App extends React.Component {
     return (
       <div className="hello-react-blockquote">
         <ReactBlockquote style={{padding: 21}}>
-          Whenever you see a successful business, someone once made a courageous decision. ~Peter F. Drucker
+          Whenever you see a successful business, someone once made a courageous decision. Peter F. Drucker
         </ReactBlockquote>
       </div>
     );
