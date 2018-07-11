@@ -46,10 +46,6 @@ module.exports = {
       {
         from: './src/components/style.scss',
         to: './style.scss',
-      },
-      {
-        from: './src/assets',
-        to: 'assets'
       }
     ]),
     new webpack.ProvidePlugin({
